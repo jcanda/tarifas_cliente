@@ -1,7 +1,7 @@
 <?php
 /*
  * This file is part of FacturaSctipts
- * Copyright (C) 2013-2015  Carlos Garcia Gomez  neorazorx@gmail.com
+ * Copyright (C) 2013-2015  Jcanda info@zapasoft.com
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
@@ -18,7 +18,8 @@
  */
 
 /**
- * Un autorizado. Puede estar relacionado con un cliente.
+ * Permite tener un listado con tarifas personalizadas para cada cliente de cualquier articulo
+ * Por defecto siempre cojerá la tarifa mas actualizada.
  */ 
 class tarifas_clientes extends fs_model
 {
