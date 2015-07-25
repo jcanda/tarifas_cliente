@@ -70,7 +70,7 @@ class tarifas_cliente extends fs_controller {
                 header('Content-Type: application/json');
                 echo json_encode(array('query' => $_REQUEST['buscar_articulo'], 'suggestions' => $json));
 
-            }else if ($_POST['tarifa_pvp']){
+            }else if (isset($_POST['tarifa_pvp'])){
                 $this->nueva_tarifa();
                 //Luego Seleccionamos las tarifas mas recientes de los articulos para este cliente
                 $this->tarifas_select = $this->tarifas->get_tarifas_cliente_select($_GET['codcliente']);
