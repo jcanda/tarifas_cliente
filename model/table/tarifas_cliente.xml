@@ -60,7 +60,7 @@
         <nombre>tarifas_cliente_tarifa_codcliente_clientes_codcliente</nombre>
         <consulta>FOREIGN KEY (tarifa_codcliente)
             REFERENCES clientes (codcliente)
-            ON DELETE RESTRICT ON UPDATE CASCADE
+            ON DELETE CASCADE ON UPDATE CASCADE
         </consulta>
     </restriccion>
     
@@ -68,7 +68,7 @@
         <nombre>tarifas_cliente_tarifa_codarticulo_articulos_referencia</nombre>
         <consulta>FOREIGN KEY (tarifa_codarticulo)
             REFERENCES articulos (referencia)
-            ON DELETE RESTRICT ON UPDATE CASCADE
+            ON DELETE CASCADE ON UPDATE CASCADE
         </consulta>
     </restriccion>
     
