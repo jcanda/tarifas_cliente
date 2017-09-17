@@ -38,7 +38,7 @@ class tarifas_cliente extends fs_controller {
         parent::__construct(__CLASS__, 'Tarifas de cliente', 'ventas', FALSE, FALSE);
     }
 
-    protected function process() {
+    protected function private_core() {
         
         $this->offset = 0;
         $this->agente = new agente();

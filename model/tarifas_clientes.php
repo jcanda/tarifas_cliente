@@ -33,7 +33,7 @@ class tarifas_clientes extends fs_model
 
    public function __construct( $p = FALSE)
    {
-      parent::__construct('tarifas_cliente', 'plugins/tarifas_cliente/');
+      parent::__construct('tarifas_cliente');
 
       if($p)
       {
