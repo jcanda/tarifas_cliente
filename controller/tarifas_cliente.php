@@ -2,7 +2,7 @@
 
 /*
  * This file is part of FacturaSctipts
- * Copyright (C) 2015  Jcanda info@zapasoft.com
+ * Copyright (C) 2017  Jcanda info@zapasoft.com
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
@@ -64,7 +64,7 @@ class tarifas_cliente extends fs_controller {
                 $this->articulos = $articulo->search($_REQUEST['buscar_articulo']);
                         
                 foreach ($this->articulos as $art) {
-                    $json[] = array('value' => $art->descripcion, 'data' => $art->referencia);
+                    $json[] = array('value' => $art->referencia.'-'.$art->descripcion, 'data' => $art->referencia);
                 }
 
                 header('Content-Type: application/json');
